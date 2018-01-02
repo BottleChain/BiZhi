@@ -23,12 +23,10 @@ import com.jess.arms.utils.ArmsUtils;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 import com.yeyue.bizhi.BuildConfig;
-import com.yeyue.bizhi.R;
 import com.yeyue.bizhi.constant.Constant;
 import com.yeyue.library.base.BaseUiActivity;
 import com.yeyue.library.model.StringConverterFactory;
 import com.yeyue.library.utils.ImageLoadUtils;
-import com.yeyue.library.utils.YeSkinUtils;
 import com.yeyue.library.widgets.imageload.glide.YeGlideImageLoaderStrategy;
 
 import org.json.JSONException;
@@ -161,11 +159,6 @@ public class GlobalConfiguration implements ConfigModule {
                 //Timber.w(activity + " - onActivityStarted");
                 if(activity!=null && activity instanceof BaseUiActivity){
                     BaseUiActivity baseUiActivity = (BaseUiActivity) activity;
-                    if(YeSkinUtils.isOnline()){
-                        baseUiActivity.setAppContentBackground(R.drawable.menu_bg);
-                    }else{
-
-                    }
                 }
             }
 

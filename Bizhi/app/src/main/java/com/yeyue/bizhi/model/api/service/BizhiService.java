@@ -142,7 +142,7 @@ public interface BizhiService {
      * http://vip1.kuwo.cn/vip/v2/theme?op=gat&platform=ar&id=&appVersion=8573&versions=V4
      * @return
      */
-    @GET("http://111.230.154.222/skins/kwjson")
+    @GET("http://111.230.154.222/yeSkin.json")
     Observable<HttpSkins> getSkinList();
 
 

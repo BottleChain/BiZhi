@@ -38,9 +38,9 @@ public class SkinActivity extends YeLiSkinActivity<BaseItem, SkinPresenter> impl
 
     @Override
     public List<YeSkinItem> getLoaclSkin() {
-        String[] titles = {"官方白","官方红","官方黑","傍晚","夕阳","地球","英雄","树林"};
-        int[] res = {R.color.white,R.color.colorRateRed,R.color.black,R.mipmap.dark,R.mipmap.litesun,R.mipmap.earth,R.mipmap.hero,R.mipmap.tree};
-        String[] paths = {"","night.skin","black.skin","dark.skin","litesun.skin","earth.skin","hero.skin","tree.skin"};
+        String[] titles = {"官方白","官方黑"};
+        int[] res = {R.color.white,R.color.black};
+        String[] paths = {"","night.skin","dark.skin"};
         List<YeSkinItem> baseItems = new ArrayList<YeSkinItem>();
         for (int i=0;i<titles.length;i++){
             YeSkinItem item = new YeSkinItem();

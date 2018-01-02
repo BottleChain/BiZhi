@@ -61,6 +61,7 @@ public class AlbumDetailActivity extends YeHeaderRecyActivity<BaseItem, HomePres
             return;
         }
         albumId =  albumBean.getId();
+        setTitle(albumBean.getName()+"");
         initHeader();
         mPresenter.getAlbumDetail(albumId, true);
     }

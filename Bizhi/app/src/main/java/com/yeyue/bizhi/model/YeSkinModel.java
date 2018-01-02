@@ -49,9 +49,6 @@ public class YeSkinModel extends BaseModel implements SkinContract.Model {
                             if(listReply.getData().size()>0){
                                 for (int i=0;i<listReply.getData().size();i++){
                                     YeSkinItem item = listReply.getData().get(i);
-                                    if(item!=null){
-                                        item.setResourcePath("http://111.230.154.222/skins/"+item.getSortName()+"/star.skin");
-                                    }
                                     baseItems.add(item);
                                 }
                             }

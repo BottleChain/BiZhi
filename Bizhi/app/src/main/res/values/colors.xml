@@ -5,20 +5,9 @@
 
 
     <!--提示字体颜色-->
-    <color name="color_Hint_Word">@color/skin_button_text_selector</color>
+    <color name="color_Hint_Word">@color/ye_color_Hint_Word</color>
     <!--正文字体颜色-->
-    <color name="color_Main_Body">@color/ksing_galley_text_color</color>
-
-    <!--导航栏标题颜色-->
-    <color name="ye_color_Navigation_Title">@color/skin_button_text_selector</color>
-    <!--TabLayout文字正常颜色-->
-    <color name="ye_color_Tab_Normal">@color/skin_button_text_selector</color>
-    <!--TabLayout文字选中颜色-->
-    <color name="ye_color_Tab_Select">@color/ksing_galley_text_color</color>
-    <!--底部Bottom文字默认颜色-->
-    <color name="ye_color_Bottom_Normal">@color/skin_button_text_selector</color>
-    <!--底部Bottom文字选中颜色-->
-    <color name="ye_color_Bottom_Selector">@color/ksing_galley_text_color</color>
+    <color name="color_Main_Body">@color/ye_color_Main_Word</color>
 
     <color name="color_placeholder">#33929493</color>
     <color name="color_errorPic">#dfd8a2</color>

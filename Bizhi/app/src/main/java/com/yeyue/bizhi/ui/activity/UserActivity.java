@@ -92,6 +92,7 @@ public class UserActivity extends YeHeaderPageActivity<UserPresenter> implements
             }
         }
         super.initData(savedInstanceState);
+        setTitle(userBean.getName()+"");
         mPresenter.getUser(uid);
     }
 
