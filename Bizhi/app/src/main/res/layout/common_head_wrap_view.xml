@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yeyue.library.widgets.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivHeader"
+        app:layout_widthPercent="100%h"
+        android:layout_height="match_parent"
+        android:transitionName="head"
+        app:civ_border_color="@color/colorPrimary"
+        android:background="@android:color/transparent"/>
+    <com.yeyue.library.widgets.percent.PercentRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:layout_marginLeftPercent="3%w"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvNickname"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            app:layout_textSizePercent="40%h"
+            android:text="游戏人"
+            android:textColor="@color/ye_color_Main_Word"/>
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:maxLines="1"
+            android:text="教师教师"
+            app:layout_textSizePercent="35%h"
+            android:textColor="@color/ye_color_Hint_Word"/>
+    </com.yeyue.library.widgets.percent.PercentRelativeLayout>
+</com.yeyue.library.widgets.percent.PercentLinearLayout>

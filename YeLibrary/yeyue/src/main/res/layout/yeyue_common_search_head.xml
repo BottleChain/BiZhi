@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ye_base_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/ye_app_bg_base"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ye_toolbar"
+        style="@style/YeToolbarStyle">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_search_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:transitionName="to_search">
+                <EditText
+                    android:id="@+id/edt_content"
+                    style="@style/YeSearchEdit"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ye_icon_search" />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/tv_tosearch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp"
+                android:text="返回"
+                android:textSize="16sp"
+                android:textColor="@drawable/ye_selector_tv_black"
+                android:gravity="center"
+                android:clickable="true"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/ye_base_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>

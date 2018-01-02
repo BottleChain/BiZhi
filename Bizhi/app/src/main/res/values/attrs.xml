@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--用户信息的自定义控件-->
+    <declare-styleable name="HeadWarp">
+        <attr name="head_width" format="dimension" />
+        <attr name="head_height" format="dimension" />
+        <attr name="limit_nickname" format="boolean" />
+        <attr name="headType" format="enum">
+            <enum name="header" value="1" />
+            <enum name="comment" value="2" />
+            <enum name="rank" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>
